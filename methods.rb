@@ -121,7 +121,7 @@ end
 # TODO - write n_twice (tests first)
 
 def n_twice(str, n)
-	if str.length < 2
+	if str.length < n + 1
 		return str
 	end
 	return str[0..(n - 1)] + str[-n..-1]
@@ -140,3 +140,23 @@ end
 #   * c - an integer
 #
 # TODO - write close_far (tests first)
+
+def close_far(a, b, c)
+	diff = b.abs - a.abs
+	if diff.abs > 1
+		diff = c.abs - a.abs
+	end
+	if diff.abs <= 1
+		diff2 = b.abs - a.abs
+		if diff2.abs < 2
+			diff2 = c.abs - a.abs
+			if diff2.abs < 2
+				diff2 = c.abs - b.abs
+			end
+		end
+		if diff2.abs >= 2
+			return true
+		end
+	end
+	return false
+end

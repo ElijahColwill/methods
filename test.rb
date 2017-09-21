@@ -79,4 +79,17 @@ describe 'Methods' do
 
   end
 
+ describe 'close_far' do
+    
+    it 'return true if one is far away and a and b or c is close' do
+      close_far(2, 1, -8).must_equal(true)
+    end
+
+    it 'return false if one is not far away' do
+      close_far(15, 14.5, 14).must_equal(false)
+    end
+
+  end
+
+
 end
