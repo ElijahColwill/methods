@@ -43,6 +43,13 @@ end
 #
 # TODO - write monkey_trouble?
 
+def monkey_trouble?(a_smile, b_smile)
+	trouble = false
+	if (a_smile == true and b_smile == true) || (a_smile == false and b_smile == false)
+		trouble = true
+	end
+	return trouble
+end
 
 # sum_double
 #
