@@ -64,7 +64,13 @@ end
 # TODO - write sum_double
 
 
-
+def sum_double(a, b)
+	sum = 0
+	if a == b
+		return (a + b) * 2
+	end
+	return a + b
+end
 
 # *****************************************************
 #
