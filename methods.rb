@@ -21,11 +21,7 @@
 # TODO - write sleep_in?
 
 def sleep_in?(weekday, vacation)
-	sleep_in = false
-	if (weekday == false) || (vacation == true)		
-		sleep_in = true
-	end
-	return sleep_in
+	return !weekday || vacation		
 end
 
 
@@ -44,11 +40,7 @@ end
 # TODO - write monkey_trouble?
 
 def monkey_trouble?(a_smile, b_smile)
-	trouble = false
-	if (a_smile == true and b_smile == true) || (a_smile == false and b_smile == false)
-		trouble = true
-	end
-	return trouble
+	return (a_smile and b_smile) || (!a_smile and !b_smile)
 end
 
 # sum_double
