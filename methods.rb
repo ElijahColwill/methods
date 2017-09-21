@@ -120,6 +120,12 @@ end
 #
 # TODO - write n_twice (tests first)
 
+def n_twice(str, n)
+	if str.length < 2
+		return str
+	end
+	return str[0..(n - 1)] + str[-n..-1]
+end
 
 # close_far
 #

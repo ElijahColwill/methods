@@ -67,4 +67,16 @@ describe 'Methods' do
 
   end
 
+ describe 'n_twice' do
+    
+    it 'return a string of n first and last letters of str' do
+      n_twice("Hello", 2).must_equal("Helo")
+    end
+
+    it 'return a string of n first and last letters of str' do
+      n_twice("X", 1).must_equal("X")
+    end
+
+  end
+
 end
