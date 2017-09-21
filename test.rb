@@ -55,4 +55,16 @@ describe 'Methods' do
 
   end
 
+  describe 'blackjack' do
+    
+    it 'two integers over 0 without going over 21' do
+      blackjack(7, 18).must_equal(18)
+    end
+
+    it 'returns 0 when an integer goes over 21' do
+      blackjack(666, 1).must_equal(0)
+    end
+
+  end
+
 end
